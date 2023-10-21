@@ -24,13 +24,13 @@ body {
 }
 nav {
   height: 70px;
-  border-bottom: 1px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  padding: 20px 30px;
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
   border-top-right-radius: 9px;
   border-top-left-radius: 9px;
 }
 nav > img {
-  padding: 20px 30px;
+  max-width: 100%;
 }
 
 .hero {
