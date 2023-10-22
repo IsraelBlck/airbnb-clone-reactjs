@@ -29,6 +29,13 @@ nav {
   border-top-right-radius: 9px;
   border-top-left-radius: 9px;
 }
+.gray {
+  color: gray;
+}
+
+.bold {
+  font-weight: bold;
+}
 nav > img {
   max-width: 100%;
 }
@@ -53,4 +60,23 @@ nav > img {
   width: 320px;
   font-size: 16px;
   font-weight: light;
+}
+
+.card {
+  width: 175px;
+  font-size: 12px;
+  padding-left:  36px;
+}
+
+.card--image {
+  width: 100%;
+  border-radius: 9px;
+}
+.card--rating {
+  display: flex;
+  align-items: center;
+}
+.card--star {
+  width: 14px;
+
 }
