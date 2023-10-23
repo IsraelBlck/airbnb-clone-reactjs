@@ -7,21 +7,6 @@ body {
   font-family: poppins, sans-serif;
   background-color: #E5E5E5;
 }
-.wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  vertical-align: middle;
-}
-
-.container {
-  margin-top: 30px;
-  width:550px ;
-  height: 869px;
-  background-color: white;
-  border-top-right-radius: 9px;
-  border-top-left-radius: 9px;
-}
 nav {
   height: 70px;
   padding: 20px 30px;
@@ -36,47 +21,72 @@ nav {
 .bold {
   font-weight: bold;
 }
+
+section {
+  padding: 20px;
+}
 nav > img {
   max-width: 100%;
 }
 
 .hero {
-  padding: 30px;
+  display: flex;
+  flex-direction: column;
 }
-.hero > img {
-  width: 396px;
-  display: block;
-  margin: 0 auto;
+.hero > .hero--photo {
+  max-width: 400px;
+  align-self: center;
 }
 
-.hero > h3 {
+.hero > h1 {
+  margin-bottom: 16px;
   font-size: 36px;
-  font-weight: 600px;
-  margin-bottom: 0;
 }
 
 .hero > p {
-  margin-top: 10px;
-  width: 320px;
-  font-size: 16px;
-  font-weight: light;
+  margin-top: 0;
+}
+
+.section {
+  padding: 20px;
+
+}
+.card--list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
 }
 
 .card {
   width: 175px;
   font-size: 12px;
-  padding-left:  36px;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
 }
-
 .card--image {
   width: 100%;
+  margin-bottom: 9px;
   border-radius: 9px;
+  aspect-ratio: 3/4;
 }
+.card--title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card--stats {
+  display: flex;
+  align-items: center;
+}
+
 .card--rating {
   display: flex;
   align-items: center;
 }
 .card--star {
-  width: 14px;
-
+  height: 14px;
+}
+.card--price {
+  margin-top: auto;
 }

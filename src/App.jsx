@@ -20,13 +20,13 @@ export default function App() {
     })
     
   return (
-    <div className='wrapper'>
-      <div className='container'>
+      <div>
         <Navbar />
         <Hero />
-        {datas}
+        <section className='card--list'>
+            {datas}
+        </section>
       </div>
-    </div>
   )
 }
 

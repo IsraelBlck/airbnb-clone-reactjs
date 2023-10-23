@@ -4,17 +4,15 @@ import Staricon from "../images/Star 1.png"
 export default function Card(props) {
   return (
     <div className='card'>
-      <img src={props.img} className='card--image' />
-      <div className='card--stats'>
-          <div className='card--rating'>
+      <img src={`./public/images/${props.img}`} className='card--image'/>
+          <div className='card--stats'>
               <img src={Staricon} alt="star icon" className='card--star'/>
               <span>{props.rating}</span>
               <span className='gray'>({props.reviewCount})•</span>
               <span className='gray'>{props.location}</span>
           </div>
-          <p>{props.title}</p>
-          <p><span className='bold'>From $ {props.price} </span>/ person</p>
-      </div>
+          <p className='card--title'>{props.title}</p>
+          <p className='card--price'><span className='bold'>From $ {props.price} </span>/ person</p>
     </div>
   )
 }
